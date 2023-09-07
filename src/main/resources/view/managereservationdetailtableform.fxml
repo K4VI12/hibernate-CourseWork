@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: E2C799;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostalMangement.controller.Managereservationdetailtableform">
+   <children>
+      <TableView fx:id="tableview" layoutX="29.0" layoutY="211.0" prefHeight="567.0" prefWidth="1104.0">
+         <columns>
+            <TableColumn fx:id="reservationidrow" prefWidth="157.0" style="-fx-background-color: #FAF1E4;" text="Reservation ID" />
+            <TableColumn fx:id="roomtypeidrow" prefWidth="157.0" style="-fx-background-color: #FAF1E4;" text="Room Type ID" />
+            <TableColumn fx:id="keymoneyrow" prefWidth="157.0" style="-fx-background-color: #FAF1E4;" text="Key Money" />
+            <TableColumn fx:id="studentidrow" prefWidth="157.0" style="-fx-background-color: #FAF1E4;" text="Student ID" />
+            <TableColumn fx:id="studentnamerow" prefWidth="157.0" style="-fx-background-color: #FAF1E4;" text="Student Name" />
+            <TableColumn fx:id="daterow" prefWidth="157.0" style="-fx-background-color: #FAF1E4;" text="Date" />
+            <TableColumn fx:id="statusrow" prefWidth="157.0" style="-fx-background-color: #FAF1E4;" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="tableclosebtn" layoutX="1076.0" layoutY="682.0" mnemonicParsing="false" onAction="#tableclosebtnonAction" prefHeight="50.0" prefWidth="64.0" style="-fx-background-color: transparent; -fx-rotate: 180;">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: transparent;">
+               <image>
+                  <Image url="@../assets/img/managestudentpage/leftsidearrow.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane prefHeight="122.0" prefWidth="1200.0" style="-fx-background-color: #102C57;">
+         <children>
+            <Text fill="#e4e4e4" layoutX="32.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGER SERVER DETAISLS">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

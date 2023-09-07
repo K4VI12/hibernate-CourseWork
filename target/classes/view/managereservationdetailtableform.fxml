@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="362.0" prefWidth="1051.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostalMangement.controller.Managereservationdetailtableform">
+   <children>
+      <TableView fx:id="tableview" layoutX="10.0" layoutY="14.0" prefHeight="322.0" prefWidth="959.0">
+         <columns>
+            <TableColumn fx:id="reservationidrow" prefWidth="136.0" text="Reservation ID" />
+            <TableColumn fx:id="roomtypeidrow" prefWidth="140.0" text="Room Type ID" />
+            <TableColumn fx:id="keymoneyrow" prefWidth="140.0" text="Key Money" />
+            <TableColumn fx:id="studentidrow" prefWidth="140.0" text="Student ID" />
+            <TableColumn fx:id="studentnamerow" prefWidth="129.60003662109375" text="Student Name" />
+            <TableColumn fx:id="daterow" prefWidth="136.79998779296875" text="Date" />
+            <TableColumn fx:id="statusrow" prefWidth="132.800048828125" text="Status" />
+         </columns>
+      </TableView>
+      <Button fx:id="tableclosebtn" layoutX="957.0" layoutY="157.0" mnemonicParsing="false" onAction="#tableclosebtnonAction" prefHeight="50.0" prefWidth="64.0" style="-fx-background-color: white; -fx-rotate: 180;">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/managestudentpage/leftsidearrow.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

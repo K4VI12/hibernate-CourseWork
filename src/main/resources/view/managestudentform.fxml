@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: E5E0FF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostalMangement.controller.ManagestudentformController">
+   <children>
+      <Pane layoutX="185.0" layoutY="314.0" prefHeight="384.0" prefWidth="711.0" style="-fx-background-radius: 15px; -fx-border-color: black; -fx-border-radius: 15px;">
+         <children>
+            <JFXTextField fx:id="studentIdtxt" focusColor="#17c1ff" layoutX="25.0" layoutY="33.0" onAction="#studentidtxtonAction" prefHeight="25.0" prefWidth="287.0" promptText="Student Id">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="studentFirstNametxt" focusColor="#17c1ff" layoutX="395.0" layoutY="33.0" prefHeight="25.0" prefWidth="287.0" promptText="First Name">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="studentLastNametxt" focusColor="#17c1ff" layoutX="25.0" layoutY="132.0" prefHeight="25.0" prefWidth="287.0" promptText="Last Name">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="contactNumbertxt" focusColor="#17c1ff" layoutX="395.0" layoutY="134.0" prefHeight="25.0" prefWidth="287.0" promptText="Contact Number">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </JFXTextField>
+            <Line endX="610.2000122070312" layoutX="100.0" layoutY="201.0" startX="-100.0" />
+            <Line endX="610.2000122070312" layoutX="100.0" layoutY="110.0" startX="-100.0" />
+            <JFXCheckBox fx:id="malecheck" checkedColor="#17c1ff" layoutX="418.0" layoutY="234.0" onAction="#malecheckBoxonAction" prefHeight="18.0" prefWidth="85.0" text="Male">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="femelcheck" checkedColor="#17c1ff" layoutX="503.0" layoutY="234.0" onAction="#femekcheckBoxonAction" prefHeight="18.0" prefWidth="85.0" text="Female">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXCheckBox>
+            <DatePicker fx:id="dobtxt" layoutX="27.0" layoutY="314.0" prefHeight="25.0" prefWidth="287.0" style="-fx-focus-traversable: #17c1ff; -fx-background-color: white;" styleClass="date-picker" stylesheets="@../assets/css/style.css" />
+            <Button fx:id="savebtn" layoutX="315.0" layoutY="369.0" mnemonicParsing="false" onAction="#savebtnonaction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-radius: 10px; -fx-background-color: #17c1ff; -fx-border-radius: 10px;" text="Save">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="updatebtn" layoutX="446.0" layoutY="369.0" mnemonicParsing="false" onAction="#updatebtnonAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-radius: 10px; -fx-background-color: F55050; -fx-border-radius: 10px;" text="Update">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="deletebtn" layoutX="576.0" layoutY="369.0" mnemonicParsing="false" onAction="#deletebtnonAction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-radius: 10px; -fx-background-color: FFEA20; -fx-border-radius: 10px;" text="Delete">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Line endX="610.2000122070312" layoutX="102.0" layoutY="290.0" startX="-100.0" />
+            <JFXTextField fx:id="adresstxt" focusColor="#17c1ff" layoutX="26.0" layoutY="218.0" prefHeight="25.0" prefWidth="287.0" promptText="Address">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </JFXTextField>
+            <Pane layoutX="435.0" layoutY="186.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: E5E0FF;">
+               <children>
+                  <Text layoutX="21.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="423.0" layoutY="93.0" prefHeight="36.0" prefWidth="138.0" style="-fx-background-color: E5E0FF;">
+               <children>
+                  <Text layoutX="11.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="454.0" layoutY="-18.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: E5E0FF;">
+               <children>
+                  <Text layoutX="17.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="50.0" layoutY="273.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: E5E0FF;">
+               <children>
+                  <Text layoutX="10.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: E5E0FF;" text="Date Of Birth">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="65.0" layoutY="183.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: E5E0FF;">
+               <children>
+                  <Text layoutX="21.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="65.0" layoutY="92.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: E5E0FF;">
+               <children>
+                  <Text layoutX="21.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="248.0" layoutY="296.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: E5E0FF;">
+         <children>
+            <Text layoutX="21.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button fx:id="tableopenbtn" layoutX="64.0" layoutY="453.0" mnemonicParsing="false" onAction="#tableopenbtnonAction" prefHeight="92.0" prefWidth="91.0" style="-fx-background-color: E5E0FF;">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/managestudentpage/database.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="homepagebtn" layoutX="64.0" layoutY="332.0" mnemonicParsing="false" onAction="#homepagebtnonAction" prefHeight="92.0" prefWidth="91.0" style="-fx-background-color: E5E0FF;">
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/homepage/students.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane prefHeight="122.0" prefWidth="1200.0" style="-fx-background-color: #03001C;">
+         <children>
+            <Text fill="WHITE" layoutX="48.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT MANAGE">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="76.0" fitWidth="91.0" layoutX="1070.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/firstpage/Untitled-1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="432.0" fitWidth="249.0" layoutX="925.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/mangeroompage/student.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

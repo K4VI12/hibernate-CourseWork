@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="362.0" prefWidth="808.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostalMangement.controller.ManageroomdetailtableformController">
+   <children>
+      <TableView fx:id="tableview" layoutX="11.0" layoutY="13.0" prefHeight="322.0" prefWidth="721.0">
+         <columns>
+            <TableColumn fx:id="roomtypeidrow" prefWidth="144.0" text="Room Type ID" />
+            <TableColumn fx:id="typerow" prefWidth="145.5999755859375" text="Type" />
+            <TableColumn fx:id="keymoneyrow" prefWidth="147.199951171875" text="Key Money" />
+            <TableColumn fx:id="qtyrow" prefWidth="133.60003662109375" text="Qty" />
+            <TableColumn prefWidth="149.60000000000002" text="C2" />
+         </columns>
+      </TableView>
+      <Button fx:id="tableclosebtn" layoutX="720.0" layoutY="150.0" mnemonicParsing="false" onAction="#tableclosebtnonAction" prefHeight="50.0" prefWidth="64.0" style="-fx-background-color: white; -fx-rotate: 180;">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/img/managestudentpage/leftsidearrow.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

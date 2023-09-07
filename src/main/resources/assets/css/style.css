@@ -1,0 +1,20 @@
+.button:pressed {
+    -fx-background-color: red;
+}
+
+.date-picker {
+    -fx-border-color: white;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.date-picker:focused {
+    -fx-border-color:  #17c1ff;
+}
+
+.pane {
+    -fx-background-radius: 20px 20px 20px 0px;
+    -fx-background-color: linear-gradient(to right top, #9559ec, #9b4de3, #a13fda, #a72ed0, #ac14c6);
+    -fx-border-color: black;
+    -fx-border-radius: 20px 20px 20px 0px;
+}
+
